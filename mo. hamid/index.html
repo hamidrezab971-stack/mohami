@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10100e">
+  <meta name="description" content="mo.hami؛ پوشاکی برای بیان هویت و استایل شخصی شما.">
+  <title>mo.hami — Wear Your Identity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Vazirmatn:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="dark">
+  <header class="header">
+    <div class="container header-inner">
+      <button class="menu-toggle" id="menuToggle" type="button"
+              aria-expanded="false" aria-controls="menuOverlay">
+        <span lang="en" dir="ltr">MENU</span>
+        <span class="hamburger" aria-hidden="true"><i></i><i></i></span>
+      </button>
+
+      <button class="theme-toggle" id="themeToggle" type="button"
+              aria-label="تغییر تم سایت" title="تغییر حالت روشن و تاریک">
+        <span id="themeIcon" aria-hidden="true">☼</span>
+        <span id="themeLabel" lang="en" dir="ltr">LIGHT</span>
+      </button>
+
+      <nav class="desktop-nav" aria-label="پیمایش اصلی">
+        <a href="#signature" lang="en" dir="ltr">Signature</a>
+        <a href="#collection" lang="en" dir="ltr">Collection</a>
+        <a href="#style-lab" lang="en" dir="ltr">Style Lab</a>
+        <a href="#journal" lang="en" dir="ltr">Journal</a>
+        <a href="#contact">تماس</a>
+      </nav>
+
+      <button class="cart-toggle" id="cartToggle" type="button"
+              aria-label="باز کردن سبد خرید">
+        <span lang="en" dir="ltr">BAG</span>
+        <span>سبد خرید</span>
+        <b id="cartCount" aria-label="تعداد محصولات سبد">۰</b>
+      </button>
+
+      <a class="logo" href="#home" aria-label="mo.hami — صفحهٔ اصلی" lang="en" dir="ltr">
+        mo<span>.</span>hami
+      </a>
+    </div>
+  </header>
+
+  <nav class="menu-overlay" id="menuOverlay" aria-label="منوی کامل سایت" tabindex="-1" inert
+       aria-hidden="true">
+    <div class="menu-top">
+      <a class="logo logo-white" href="#home" lang="en" dir="ltr">mo<span>.</span>hami</a>
+      <button class="menu-close" id="menuClose" type="button"
+              aria-label="بستن منو">×</button>
+    </div>
+
+    <div class="menu-main">
+      <p class="eyebrow" lang="en" dir="ltr">FASHION IS AN ATTITUDE</p>
+      <a class="menu-link" href="#home" lang="en" dir="ltr"><span>01</span>Home<b aria-hidden="true">↗</b></a>
+      <a class="menu-link" href="#signature" lang="en" dir="ltr"><span>02</span>Signature Looks<b aria-hidden="true">↗</b></a>
+      <a class="menu-link" href="#collection" lang="en" dir="ltr"><span>03</span>Collection<b aria-hidden="true">↗</b></a>
+      <a class="menu-link" href="#style-lab" lang="en" dir="ltr"><span>04</span>Style Lab<b aria-hidden="true">↗</b></a>
+      <a class="menu-link" href="#journal" lang="en" dir="ltr"><span>05</span>Journal<b aria-hidden="true">↗</b></a>
+      <a class="menu-link" href="#contact" lang="fa" dir="rtl"><span>06</span>تماس و پشتیبانی<b aria-hidden="true">↗</b></a>
+    </div>
+
+    <div class="menu-footer">
+      <span lang="en" dir="ltr">BLACK / WHITE / GOLD</span>
+      <span lang="en" dir="ltr">YOUR STYLE. YOUR RULES.</span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="container hero-layout">
+        <div class="hero-media image-frame">
+          <img class="hero-image"
+               src="assets/IMG_3264.png%20(1).jpeg"
+               data-fallbacks="assets/IMG_3264.png.jpeg|assets/IMG_3269.png.jpeg|assets/IMG_3275.png.jpeg"
+               alt="نمایی از کمپین پوشاک mo.hami"
+               fetchpriority="high">
+          <div class="hero-gradient" aria-hidden="true"></div>
+          <span class="hero-side-label" lang="en" dir="ltr">THE ART OF GETTING DRESSED</span>
+          <div class="hero-image-caption">
+            <span lang="en" dir="ltr">NEW SEASON / 2026</span>
+            <strong lang="en" dir="ltr">NO RULES.</strong>
+          </div>
+          <span class="hero-image-index" lang="en" dir="ltr">01 — 04</span>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span lang="en" dir="ltr">A NEW PERSPECTIVE ON FASHION</span>
+          </p>
+          <h1 id="heroTitle" lang="en" dir="ltr">WEAR<br>YOUR<br><span>IDENTITY.</span></h1>
+          <p class="hero-description">
+            استایل فقط چیزی نیست که می‌پوشی؛ چیزی است که بی‌کلام، دربارهٔ تو می‌گوید.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-white" href="#collection">
+              <span lang="en" dir="ltr">EXPLORE COLLECTION</span><span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="#style-lab">استایل خودت رو بساز ↓</a>
+          </div>
+          <div class="hero-meta">
+            <span lang="en" dir="ltr">MO.HAMI / 001</span>
+            <span lang="en" dir="ltr">DESIGNED TO BE DIFFERENT</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#signature">
+        <span lang="en" dir="ltr">SCROLL TO EXPLORE</span><i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <div class="marquee" aria-label="استایل، انتخابی شخصی است">
+      <div class="marquee-track" aria-hidden="true">
+        <span>STYLE IS PERSONAL</span><i>✳</i>
+        <span>LESS RULES MORE YOU</span><i>✳</i>
+        <span>STYLE IS PERSONAL</span><i>✳</i>
+        <span>LESS RULES MORE YOU</span><i>✳</i>
+      </div>
+    </div>
+
+    <section class="section" id="signature" aria-labelledby="signatureTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow muted" lang="en" dir="ltr">01 / THE MO.HAMI UNIVERSE</p>
+            <h2 id="signatureTitle" lang="en" dir="ltr">Not just clothes.<br><span>A point of view.</span></h2>
+          </div>
+          <p class="section-description">
+            هر استایل یک داستان دارد؛ داستانی که تو با انتخاب‌هایت می‌نویسی.
+          </p>
+        </div>
+
+        <div class="signature-grid">
+          <a class="editorial-card editorial-large image-frame" href="#style-lab">
+            <img src="assets/IMG_3264.png%20(1).jpeg" alt="استایل خیابانی از مجموعهٔ mo.hami" loading="lazy">
+            <span class="card-index" lang="en" dir="ltr">LOOK 001</span>
+            <div class="editorial-caption">
+              <span lang="en" dir="ltr">01 / STREET CULTURE</span>
+              <h3 lang="en" dir="ltr">Urban<br>Identity.</h3>
+              <b class="circle-arrow" aria-hidden="true">↗</b>
+            </div>
+          </a>
+
+          <a class="editorial-card image-frame" href="#style-lab">
+            <img src="assets/IMG_3275.png.jpeg" alt="پوشش روزمره با حال‌وهوای مینیمال" loading="lazy">
+            <span class="card-index" lang="en" dir="ltr">LOOK 002</span>
+            <div class="editorial-caption">
+              <span lang="en" dir="ltr">02 / EVERYDAY FORM</span>
+              <h3 lang="en" dir="ltr">Effortless<br>Presence.</h3>
+              <b class="circle-arrow" aria-hidden="true">↗</b>
+            </div>
+          </a>
+
+          <a class="editorial-card image-frame" href="#style-lab">
+            <img src="assets/IMG_3269.png.jpeg" alt="ترکیب مونوکروم از پوشاک mo.hami" loading="lazy">
+            <span class="card-index" lang="en" dir="ltr">LOOK 003</span>
+            <div class="editorial-caption">
+              <span lang="en" dir="ltr">03 / MONOCHROME</span>
+              <h3 lang="en" dir="ltr">Quietly<br>Different.</h3>
+              <b class="circle-arrow" aria-hidden="true">↗</b>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section collection-section" id="collection" aria-labelledby="collectionTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow muted" lang="en" dir="ltr">02 / THE COLLECTION</p>
+            <h2 id="collectionTitle" lang="en" dir="ltr">Selected pieces.<br><span>Endless combinations.</span></h2>
+          </div>
+          <p class="section-description">
+            محصول موردنظرت را پیدا کن، به سبد اضافه کن و استایل خودت را بساز.
+          </p>
+        </div>
+
+        <div class="shop-toolbar">
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="productSearch" type="search" placeholder="جست‌وجوی محصول..."
+                   aria-label="جست‌وجوی محصولات" autocomplete="off">
+          </label>
+          <div class="filter-list shop-filters" role="group" aria-label="فیلتر دسته‌بندی محصولات">
+            <button class="filter-button is-active" type="button" data-shop-filter="all">همه</button>
+            <button class="filter-button" type="button" data-shop-filter="top">بالاتنه</button>
+            <button class="filter-button" type="button" data-shop-filter="bottom">پایین‌تنه</button>
+            <button class="filter-button" type="button" data-shop-filter="shoes">کفش</button>
+            <button class="filter-button" type="button" data-shop-filter="accessory">اکسسوری</button>
+          </div>
+        </div>
+
+        <div class="collection-meta">
+          <span id="productResultsLabel" lang="en" dir="ltr">THE ESSENTIALS — 2026</span>
+          <span lang="en" dir="ltr">SELECT / COMBINE / REDEFINE</span>
+        </div>
+        <div class="product-grid" id="collectionGrid" aria-live="polite"></div>
+        <p class="empty-state" id="emptyProducts" hidden>محصولی با این مشخصات پیدا نشد.</p>
+      </div>
+    </section>
+
+    <section class="section style-lab" id="style-lab" aria-labelledby="styleLabTitle">
+      <div class="container">
+        <div class="lab-intro">
+          <p class="eyebrow muted-light" lang="en" dir="ltr">03 / YOUR PERSONAL PLAYGROUND</p>
+          <h2 id="styleLabTitle" lang="en" dir="ltr">THE STYLE<br><span>LAB.</span></h2>
+          <p>قوانین خودت را تعریف کن. از هر دسته یک لباس انتخاب کن و ترکیب مخصوص خودت را بساز.</p>
+        </div>
+
+        <div class="lab-layout">
+          <div class="lab-picker">
+            <div class="lab-title-row">
+              <div>
+                <span class="small-label" lang="en" dir="ltr">CHOOSE YOUR PIECES</span>
+                <h3 lang="en" dir="ltr">Build your look.</h3>
+              </div>
+              <span class="live-label" lang="en" dir="ltr">LIVE EDITION</span>
+            </div>
+            <div class="filter-list" role="group" aria-label="فیلتر محصولات آزمایشگاه استایل">
+              <button class="filter-button is-active" type="button" data-style-filter="all">همه</button>
+              <button class="filter-button" type="button" data-style-filter="top">بالاتنه</button>
+              <button class="filter-button" type="button" data-style-filter="bottom">پایین‌تنه</button>
+              <button class="filter-button" type="button" data-style-filter="shoes">کفش</button>
+              <button class="filter-button" type="button" data-style-filter="accessory">اکسسوری</button>
+            </div>
+            <div class="lab-product-grid" id="labProductGrid" aria-live="polite"></div>
+          </div>
+
+          <aside class="look-panel" aria-labelledby="lookPanelTitle">
+            <div class="look-panel-heading">
+              <div>
+                <span class="small-label" lang="en" dir="ltr">YOUR PERSONAL EDIT</span>
+                <h3 id="lookPanelTitle" lang="en" dir="ltr">My Look<span>.</span></h3>
+              </div>
+              <span class="look-number" lang="en" dir="ltr">MO / 001</span>
+            </div>
+            <div class="progress-label">
+              <span>استایل تو</span><span id="lookCount">۰ / ۴</span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="selected-items" id="selectedItems" aria-live="polite"></div>
+            <div class="look-total">
+              <span>مجموع قیمت نمونه</span><strong id="lookTotalPrice">۰ تومان</strong>
+            </div>
+            <div class="look-actions">
+              <button class="button button-dark" id="saveLookBtn" type="button">
+                <span lang="en" dir="ltr">SAVE YOUR LOOK</span><span aria-hidden="true">↗</span>
+              </button>
+              <button class="button button-outline" id="clearLookBtn" type="button">پاک‌کردن انتخاب‌ها</button>
+            </div>
+            <p class="look-note">قیمت‌ها نمونه‌اند. استایل انتخاب‌شده فقط در همین مرورگر ذخیره می‌شود.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journal-section" id="journal" aria-labelledby="journalTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow muted" lang="en" dir="ltr">04 / NOTES ON STYLE</p>
+            <h2 id="journalTitle" lang="en" dir="ltr">Beyond the<br><span>everyday.</span></h2>
+          </div>
+          <p class="section-description">الهام بگیر، متفاوت نگاه کن و سبک خودت را بساز.</p>
+        </div>
+
+        <div class="journal-grid">
+          <article class="journal-card journal-wide image-frame">
+            <img src="assets/IMG_4213.jpeg" alt="روایت تصویری از سادگی در پوشش" loading="lazy">
+            <div class="journal-caption">
+              <span lang="en" dir="ltr">JOURNAL / 001</span>
+              <h3 lang="en" dir="ltr">The beauty of simplicity.</h3>
+              <span lang="en" dir="ltr">FORM FOLLOWS FEELING ↗</span>
+            </div>
+          </article>
+          <article class="journal-card image-frame">
+            <img src="assets/IMG_3968.png.jpeg" alt="روایت تصویری از بیان شخصی در استایل" loading="lazy">
+            <div class="journal-caption">
+              <span lang="en" dir="ltr">JOURNAL / 002</span>
+              <h3 lang="en" dir="ltr">Wear it your way.</h3>
+              <span lang="en" dir="ltr">PERSONAL EXPRESSION ↗</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contactTitle">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow muted-light" lang="en" dir="ltr">05 / LET'S TALK</p>
+          <h2 id="contactTitle" lang="en" dir="ltr">NEED A<br><span>HAND?</span></h2>
+          <p>برای پرسش دربارهٔ محصول، سایز یا نحوهٔ ثبت درخواست با ما در ارتباط باش.</p>
+          <div class="contact-links">
+            <a class="contact-link" id="supportWhatsApp" href="#contact">
+              <span lang="en" dir="ltr">WHATSAPP SUPPORT</span><span aria-hidden="true">↗</span>
+            </a>
+            <a class="contact-link" id="supportInstagram" href="#contact">
+              <span lang="en" dir="ltr">FOLLOW ON INSTAGRAM</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <p class="config-hint" id="supportConfigHint">
+            برای فعال‌شدن لینک‌های پشتیبانی، اطلاعات تماس را در تنظیمات فایل script.js وارد کن.
+          </p>
+        </div>
+
+        <form class="support-form" id="supportForm">
+          <p class="small-label" lang="en" dir="ltr">SEND A MESSAGE</p>
+          <label>
+            نام
+            <input name="name" type="text" placeholder="نام شما" autocomplete="name"
+                   required maxlength="80">
+          </label>
+          <label>
+            شماره تماس
+            <input name="phone" type="tel" placeholder="شماره تماس" autocomplete="tel"
+                   required maxlength="30">
+          </label>
+          <label>
+            پیام شما
+            <textarea name="message" rows="4" placeholder="چطور می‌تونیم کمکت کنیم؟"
+                      required maxlength="1000"></textarea>
+          </label>
+          <button class="button button-white" type="submit">ارسال پیام به پشتیبانی <span aria-hidden="true">↗</span></button>
+          <p class="form-note">
+            این فرم با واتساپِ تنظیم‌شده پیام را آماده می‌کند؛ پیام مستقیماً به سرور ارسال نمی‌شود.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closingTitle">
+      <div class="container closing-inner">
+        <p class="eyebrow muted" lang="en" dir="ltr">THIS IS MO.HAMI</p>
+        <h2 id="closingTitle" lang="en" dir="ltr">DON'T FOLLOW.<br><span>DEFINE.</span></h2>
+        <a class="button button-white" href="#collection">
+          <span lang="en" dir="ltr">EXPLORE THE COLLECTION</span><span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <a class="logo" href="#home" lang="en" dir="ltr">mo<span>.</span>hami</a>
+      <p lang="en" dir="ltr">FASHION / IDENTITY / EXPRESSION</p>
+      <a class="back-top" href="#home"><span lang="en" dir="ltr">BACK TO TOP</span> ↑</a>
+    </div>
+    <div class="container footer-bottom">
+      <span lang="en" dir="ltr">© 2026 MO.HAMI — CONCEPT STORE</span>
+      <span lang="en" dir="ltr">BUILT TO EXPRESS YOURSELF.</span>
+    </div>
+  </footer>
+
+  <div class="drawer-backdrop" id="cartBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true"
+         aria-hidden="true" aria-labelledby="cartTitle" tabindex="-1" inert>
+    <div class="drawer-header">
+      <div>
+        <span class="small-label" lang="en" dir="ltr">YOUR SELECTION</span>
+        <h2 id="cartTitle" lang="en" dir="ltr">Shopping bag<span>.</span></h2>
+      </div>
+      <button class="icon-close" id="cartClose" type="button" aria-label="بستن سبد خرید">×</button>
+    </div>
+    <div class="cart-items" id="cartItems" aria-live="polite"></div>
+    <div class="cart-empty" id="cartEmpty">
+      <span class="empty-bag" lang="en" dir="ltr">BAG / 00</span>
+      <p>سبدت هنوز خالیه.</p>
+      <a class="button button-dark" href="#collection" id="continueShopping">رفتن به کالکشن <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="drawer-bottom" id="drawerBottom" hidden>
+      <div class="cart-subtotal"><span>جمع قیمت نمونه</span><strong id="cartTotal">۰ تومان</strong></div>
+      <p class="cart-disclaimer">این فروشگاه نمایشی است؛ ثبت سفارش و دریافت وجه انجام نمی‌شود.</p>
+      <button class="button button-dark checkout-button" id="checkoutOpen" type="button">
+        ادامه برای ثبت درخواست آزمایشی <span aria-hidden="true">↗</span>
+      </button>
+      <button class="support-cart" id="cartSupport" type="button">سوالی داری؟ با پشتیبانی صحبت کن</button>
+    </div>
+  </aside>
+
+  <div class="modal-backdrop" id="checkoutModal" aria-hidden="true" inert>
+    <section class="checkout-modal" role="dialog" aria-modal="true"
+             aria-labelledby="checkoutTitle">
+      <div class="drawer-header">
+        <div>
+          <span class="small-label" lang="en" dir="ltr">ORDER INQUIRY</span>
+          <h2 id="checkoutTitle" lang="en" dir="ltr">Your order request<span>.</span></h2>
+        </div>
+        <button class="icon-close" id="checkoutClose" type="button" aria-label="بستن فرم سفارش">×</button>
+      </div>
+      <p class="checkout-intro">
+        این فرم برای پیش‌نمایش اطلاعات سفارش است. در این نسخه سفارشی ثبت نمی‌شود و هیچ پرداختی انجام نمی‌شود.
+      </p>
+      <form id="checkoutForm" class="checkout-form">
+        <label>
+          نام و نام خانوادگی
+          <input name="fullName" type="text" autocomplete="name" required maxlength="100">
+        </label>
+        <div class="form-two">
+          <label>
+            شماره موبایل
+            <input name="phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="09...">
+          </label>
+          <label>
+            شهر
+            <input name="city" type="text" autocomplete="address-level2" required maxlength="80">
+          </label>
+        </div>
+        <label>
+          آدرس کامل
+          <input name="address" type="text" autocomplete="street-address" required maxlength="300">
+        </label>
+        <label>
+          توضیحات (اختیاری)
+          <textarea name="note" rows="2" maxlength="500" placeholder="یادداشت شما"></textarea>
+        </label>
+        <div class="checkout-summary"><span>جمع قیمت نمونه</span><strong id="checkoutTotal">۰ تومان</strong></div>
+        <p class="payment-notice" id="paymentStatus" role="status">
+          پرداخت آنلاین و ثبت سفارش در این نسخه فعال نیست. اطلاعات این فرم ارسال نمی‌شود.
+        </p>
+        <button class="button button-dark checkout-button" type="submit">نمایش وضعیت درخواست</button>
+        <button class="support-cart" type="button" id="checkoutSupport">برای راهنمایی با پشتیبانی تماس بگیر</button>
+      </form>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
